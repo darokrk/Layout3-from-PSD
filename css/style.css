@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:700");
+body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
+
+* { box-sizing: border-box; }
+
+.red--color, .nav .nav__header .nav__header--mark, .nav .nav__list .nav__item:hover { color: #ed145b; }
+
+#main { min-height: 800px; background: url("../images/main.jpg") no-repeat center; background-size: cover; }
+
+.container { max-width: 1170px; margin: 0 auto; padding: 0 15px; border: 1px solid #fff; }
+
+.nav { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+
+.nav .nav__header { color: #fff; font-family: 'Montserrat', sans-serif; }
+
+.nav .nav__list { list-style-type: none; display: -ms-flexbox; display: flex; font-weight: bold; letter-spacing: 1px; }
+
+.nav .nav__list .nav__item:not(:last-child) { margin-right: 10px; }
+
+.nav .nav__list .nav__item:hover { cursor: pointer; transition: 0.6s; }

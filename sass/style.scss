@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:700');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+.red--color {
+    color: #ed145b;
+}
+#main {
+    min-height: 800px;
+    background: url('../images/main.jpg') no-repeat center;
+    background-size: cover;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid #fff;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__header {
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        .nav__header--mark {
+            @extend .red--color;
+        }
+    }
+    .nav__list {
+        list-style-type: none;
+        display: flex;
+        font-weight: bold;
+        letter-spacing: 1px;
+        .nav__item:not(:last-child) {
+            margin-right: 10px;
+        }
+        .nav__item:hover {
+            @extend .red--color;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+    }
+}
