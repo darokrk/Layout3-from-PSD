@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Montserrat:700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Montserrat:700|Noto+Serif:700");
 body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 * { box-sizing: border-box; }
@@ -69,8 +69,26 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #services .services__slogan .services__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; margin-bottom: 80px; }
 
-#services .services__icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 65px; text-align: center; }
+#services .services__icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 80px; text-align: center; }
 
 #services .services__icons .icons__content { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-transform: uppercase; font-weight: 400; width: 130px; height: 130px; border: 1px solid #5a5a5a; border-radius: 50%; }
 
 #services .services__icons .icons__text { color: #ed145b; text-transform: uppercase; }
+
+#quotes { min-height: 502px; background: url("../images/quotes.jpg") no-repeat center; background-size: cover; position: relative; }
+
+#quotes .quotes__content { min-height: 500px; width: 80%; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: auto; text-align: center; }
+
+#quotes .quotes__content .quotes__text { color: #fff; font-size: 1.55rem; font-weight: 300; font-style: italic; line-height: 40px; position: relative; }
+
+#quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after { content: ',,'; height: 150px; display: inherit; font-size: 158px; color: #ed145b; font-family: 'Noto Serif', serif; font-weight: bold; }
+
+#quotes .quotes__content .quotes__text::before { transform: rotate(180deg); }
+
+#quotes .quotes__icon { position: absolute; font-size: 40px; }
+
+#quotes .quotes__icon:hover { cursor: pointer; color: #ed145b; transition: 0.6s; }
+
+#quotes .quotes__icon--right { top: 50%; right: 14%; }
+
+#quotes .quotes__icon--left { top: 47%; left: 14%; }

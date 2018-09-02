@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Montserrat:700|Noto+Serif:700');
 
 body {
     margin: 0;
@@ -254,7 +254,7 @@ body {
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 65px;
+        padding-bottom: 80px;
         text-align: center;
 
         .icons__content {
@@ -273,5 +273,67 @@ body {
             color: #ed145b;
             text-transform: uppercase;
         }
+    }
+}
+
+#quotes {
+    min-height: 502px;
+    background: url('../images/quotes.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    .quotes__content {
+        min-height: 500px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+
+        .quotes__text {
+            color: #fff;
+            font-size: 1.55rem;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 40px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: ',,';
+                height: 150px;
+                display: inherit;
+                font-size: 158px;
+                color: #ed145b;
+                font-family: 'Noto Serif', serif;
+                font-weight: bold;
+            }
+
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .quotes__icon {
+        position: absolute;
+        font-size: 40px;
+
+        &:hover {
+            cursor: pointer;
+            color: #ed145b;
+            transition: 0.6s;
+        }
+    }
+
+    .quotes__icon--right {
+        top: 50%;
+        right: 14%;
+    }
+
+    .quotes__icon--left {
+        top: 47%;
+        left: 14%;
     }
 }
