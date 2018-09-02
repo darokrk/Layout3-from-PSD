@@ -7,7 +7,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 .red--color, #main .nav .nav__header .nav__header--mark, #main .nav .nav__list .nav__item:hover, #about .about__content .about__button { color: #ed145b; }
 
-.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto 0; }
+.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto 0; }
 
 .separator, #about .about__separator { position: relative; overflow: hidden; padding-bottom: 50px; width: 100%; }
 
@@ -60,3 +60,17 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 #about .about__content .about__button:hover { cursor: pointer; }
 
 #about .about__content .about__button .about__button--icon { margin-left: 3px; }
+
+#services .services__slogan { min-height: 400px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; text-align: center; }
+
+#services .services__slogan .services__header { color: #5a5a5a; margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; }
+
+#services .services__slogan .services__header::after { width: 100%; margin: 25px 0; }
+
+#services .services__slogan .services__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; margin-bottom: 80px; }
+
+#services .services__icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 65px; text-align: center; }
+
+#services .services__icons .icons__content { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-transform: uppercase; font-weight: 400; width: 130px; height: 130px; border: 1px solid #5a5a5a; border-radius: 50%; }
+
+#services .services__icons .icons__text { color: #ed145b; text-transform: uppercase; }

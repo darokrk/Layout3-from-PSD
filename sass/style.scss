@@ -191,11 +191,13 @@ body {
             font-weight: 300;
             line-height: 1.8;
         }
+
         .about__text--mark {
             color: #ed145b;
             text-transform: uppercase;
             font-weight: 400;
         }
+
         .about__button {
             width: 30px;
             height: 30px;
@@ -212,6 +214,64 @@ body {
             .about__button--icon {
                 margin-left: 3px;
             }
+        }
+    }
+}
+
+#services {
+    .services__slogan {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+
+        .services__header {
+            color: #5a5a5a;
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 300;
+            font-style: italic;
+
+            &::after {
+                @extend .red--emphasize;
+                width: 100%;
+                margin: 25px 0;
+            }
+        }
+
+        .services__text {
+            color: #5a5a5a;
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 80px;
+        }
+    }
+
+    .services__icons {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 65px;
+        text-align: center;
+
+        .icons__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            width: 130px;
+            height: 130px;
+            border: 1px solid #5a5a5a;
+            border-radius: 50%;
+        }
+
+        .icons__text {
+            color: #ed145b;
+            text-transform: uppercase;
         }
     }
 }
