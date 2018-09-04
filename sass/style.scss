@@ -448,3 +448,36 @@ body {
         }
     }
 }
+
+#info {
+    .info__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        min-height: 600px;
+        margin-top: 60px;
+
+        .info__element {
+            display: flex;
+            width: 380px;
+            height: 200px;
+
+            .info__content {
+                padding: 0 25px 25px;
+                font-size: 15px;
+
+                .info__header {
+                    text-transform: uppercase;
+                    @extend .red--color;
+                    font-size: 15px;
+                    margin-top: 0;
+                }
+
+                .info__text {
+                    @extend .text--black;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
