@@ -63,8 +63,8 @@ body {
         animation: none;
     }
 
-    &:active {
-        outline: none;
+    &:focus {
+        outline: 0;
     }
 }
 
@@ -123,6 +123,7 @@ body {
         .nav__list {
             list-style-type: none;
             display: flex;
+            flex-wrap: wrap;
             font-weight: 700;
             letter-spacing: 1px;
 
@@ -393,6 +394,19 @@ body {
             background: #fff;
             position: relative;
             text-align: center;
+            margin-bottom: 50px;
+            box-shadow: 0 20px 35px 0 #5a5a5a;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 0.1s;
+
+                .columns__header {
+                    background: #ed145b;
+                    transition: 0.6s;
+                }
+            }
 
             .columns__header {
                 min-height: 150px;
@@ -402,12 +416,6 @@ body {
                 flex-direction: row;
                 flex-wrap: wrap;
                 padding: 0 50px;
-
-                &:hover {
-                    cursor: pointer;
-                    background: #ed145b;
-                    transition: 0.6s;
-                }
 
                 .columns__header--increase {
                     font-size: 3.1rem;
@@ -453,6 +461,7 @@ body {
     .info__container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         align-content: center;
         min-height: 600px;
         margin-top: 60px;
@@ -478,6 +487,37 @@ body {
                     font-weight: 300;
                 }
             }
+        }
+    }
+}
+
+#join-us {
+    background: #ed145b;
+
+    .join-us__content {
+        @extend .display__flex--center;
+        flex-wrap: wrap;
+        min-height: 200px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+
+        .join-us__slogan {
+            font-size: 2.37rem;
+        }
+
+        .join-us__content--mark {
+            font-weight: 700;
+            margin: 0 10px;
+        }
+
+        .join-us__button {
+            @extend .button;
+            color: #ed145b;
+            margin: 0 40px;
+            width: 180px;
+            box-shadow: 0 0 0 0 #f4f4f4;
+            animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
         }
     }
 }
