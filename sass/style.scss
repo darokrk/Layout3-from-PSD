@@ -656,7 +656,7 @@ body {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        margin: 10px auto;
+        margin: 10px auto 40px;
         text-align: center;
         @extend .red--color;
         text-transform: uppercase;
@@ -667,6 +667,45 @@ body {
             @extend .red--color;
             padding: 5px;
             font-size: 24px;
+        }
+    }
+}
+
+#more-info {
+    background: url('../images/main.jpg') no-repeat;
+    background-size: cover;
+
+    .more-info__slogan {
+        min-height: 650px;
+        @extend .display__flex--center;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        .more-info__header {
+            @extend .header__text--black;
+            color: #fff;
+
+            &::after {
+                @extend .red--emphasize;
+                width: 45%;
+            }
+        }
+
+        .more-info__text {
+            line-height: 30px;
+            font-weight: 300;
+        }
+
+        .more-info__button {
+            @extend .button;
+            width: 180px;
+            background: #ed145b;
+            color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 0 0 #ed145b;
+            animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
         }
     }
 }

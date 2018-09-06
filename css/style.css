@@ -7,25 +7,25 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 .red--color, #main .nav .nav__header .nav__header--mark, #main .nav .nav__list .nav__item:hover, #about .about__content .about__button, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon { color: #ed145b; }
 
-.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
+.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
 
 .separator, #about .about__separator { position: relative; overflow: hidden; padding-bottom: 50px; width: 100%; }
 
 .separator::before, #about .about__separator::before { content: ''; position: absolute; bottom: 100%; left: 0; width: 100%; height: 100%; background: #ed145b; transform-origin: 100% 100%; transform: rotate(-1deg); }
 
-.button, #main .main__slogan .slogan__button, #prices .prices__columns-container .columns .columns__header .columns__header-button, #prices .prices__columns-container .columns .columns__text .columns__text-button, #join-us .join-us__content .join-us__button { padding: 16px 42px; text-transform: uppercase; border: none; border-radius: 25px; font-weight: bold; background: #f4f4f4; color: #5a5a5a; margin-top: 60px; }
+.button, #main .main__slogan .slogan__button, #prices .prices__columns-container .columns .columns__header .columns__header-button, #prices .prices__columns-container .columns .columns__text .columns__text-button, #join-us .join-us__content .join-us__button, #more-info .more-info__slogan .more-info__button { padding: 16px 42px; text-transform: uppercase; border: none; border-radius: 25px; font-weight: bold; background: #f4f4f4; color: #5a5a5a; margin-top: 60px; }
 
-.button:hover, #main .main__slogan .slogan__button:hover, #prices .prices__columns-container .columns .columns__header .columns__header-button:hover, #prices .prices__columns-container .columns .columns__text .columns__text-button:hover, #join-us .join-us__content .join-us__button:hover { cursor: pointer; animation: none; }
+.button:hover, #main .main__slogan .slogan__button:hover, #prices .prices__columns-container .columns .columns__header .columns__header-button:hover, #prices .prices__columns-container .columns .columns__text .columns__text-button:hover, #join-us .join-us__content .join-us__button:hover, #more-info .more-info__slogan .more-info__button:hover { cursor: pointer; animation: none; }
 
-.button:focus, #main .main__slogan .slogan__button:focus, #prices .prices__columns-container .columns .columns__header .columns__header-button:focus, #prices .prices__columns-container .columns .columns__text .columns__text-button:focus, #join-us .join-us__content .join-us__button:focus { outline: 0; }
+.button:focus, #main .main__slogan .slogan__button:focus, #prices .prices__columns-container .columns .columns__header .columns__header-button:focus, #prices .prices__columns-container .columns .columns__text .columns__text-button:focus, #join-us .join-us__content .join-us__button:focus, #more-info .more-info__slogan .more-info__button:focus { outline: 0; }
 
 .text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content .info__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
 
 .slogan__text--white, #main .main__slogan .slogan__content, #quotes .quotes__content .quotes__text { font-size: 1.35rem; font-weight: 300; color: #fff; }
 
-.header__text--black, #about .about__content .about__header, #services .services__slogan .services__header, #prices .prices__slogan .prices__header, #news .news__slogan .news__header { color: #5a5a5a; margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
+.header__text--black, #about .about__content .about__header, #services .services__slogan .services__header, #prices .prices__slogan .prices__header, #news .news__slogan .news__header, #more-info .more-info__slogan .more-info__header { color: #5a5a5a; margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
 
-.display__flex--center, #main .main__slogan, #services .services__icons .icons__element .icons__content, #quotes .quotes__content, #prices .prices__columns-container .columns .columns__header, #join-us .join-us__content, #news .news__container .news__image--first .image__layer, #news .news__container .news__image--second .image__layer, #news .news__container .news__image--third .image__layer, #news .news__container .news__image--fourth .image__layer, #news .news__container .news__image--fifth .image__layer, #news .news__container .news__image--six .image__layer { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.display__flex--center, #main .main__slogan, #services .services__icons .icons__element .icons__content, #quotes .quotes__content, #prices .prices__columns-container .columns .columns__header, #join-us .join-us__content, #news .news__container .news__image--first .image__layer, #news .news__container .news__image--second .image__layer, #news .news__container .news__image--third .image__layer, #news .news__container .news__image--fourth .image__layer, #news .news__container .news__image--fifth .image__layer, #news .news__container .news__image--six .image__layer, #more-info .more-info__slogan { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
 
@@ -187,6 +187,18 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #news .news__content .news__text { font-weight: 300; line-height: 30px; }
 
-#news .news__footer { min-height: 150px; width: 80%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; margin: 10px auto; text-align: center; text-transform: uppercase; font-weight: 600; }
+#news .news__footer { min-height: 150px; width: 80%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; margin: 10px auto 40px; text-align: center; text-transform: uppercase; font-weight: 600; }
 
 #news .news__footer .footer__icon { transform: rotate(90deg); padding: 5px; font-size: 24px; }
+
+#more-info { background: url("../images/main.jpg") no-repeat; background-size: cover; }
+
+#more-info .more-info__slogan { min-height: 650px; -ms-flex-direction: column; flex-direction: column; text-align: center; width: 80%; margin: auto; }
+
+#more-info .more-info__slogan .more-info__header { color: #fff; }
+
+#more-info .more-info__slogan .more-info__header::after { width: 45%; }
+
+#more-info .more-info__slogan .more-info__text { line-height: 30px; font-weight: 300; }
+
+#more-info .more-info__slogan .more-info__button { width: 180px; background: #ed145b; color: #fff; margin-top: 20px; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
