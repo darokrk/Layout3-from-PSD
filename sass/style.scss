@@ -721,6 +721,7 @@ body {
         left: 5%;
         box-shadow: 0 20px 35px 0 #5a5a5a;
         border-radius: 1%;
+        transform: scale(0.9);
     }
     .download__container {
         display: flex;
@@ -761,6 +762,21 @@ body {
                 box-shadow: 0 0 0 0 #ed145b;
                 animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
             }
+        }
+    }
+}
+#footer {
+    background: #2b2b2b;
+    .footer__content {
+        min-height: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__text {
+            text-transform: uppercase;
+        }
+        .footer__text--mark {
+            color: #ed145b;
         }
     }
 }
