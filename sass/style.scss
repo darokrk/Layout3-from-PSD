@@ -703,9 +703,64 @@ body {
             width: 180px;
             background: #ed145b;
             color: #fff;
-            margin-top: 20px;
+            margin: 30px 0;
             box-shadow: 0 0 0 0 #ed145b;
             animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+    }
+}
+
+#download {
+    position: relative;
+    .download__browser {
+        width: 800px;
+        height: 600px;
+        background: url('../images/browser.png') no-repeat center;
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        box-shadow: 0 20px 35px 0 #5a5a5a;
+        border-radius: 1%;
+    }
+    .download__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 750px;
+
+        .download__content {
+            max-width: 590px;
+            color: #5a5a5a;
+
+            .download__header {
+                margin: 0;
+                font-size: 3rem;
+                font-weight: 300;
+                font-style: italic;
+                padding-top: 60px;
+
+                &::after {
+                    @extend .red--emphasize;
+                    width: 40%;
+                    margin: 25px 0;
+                }
+            }
+
+            .download__text {
+                color: #5a5a5a;
+                font-weight: 300;
+                line-height: 1.8;
+            }
+
+            .download__button {
+                @extend .button;
+                width: 210px;
+                background: #ed145b;
+                color: #fff;
+                margin: 30px 0;
+                box-shadow: 0 0 0 0 #ed145b;
+                animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+            }
         }
     }
 }

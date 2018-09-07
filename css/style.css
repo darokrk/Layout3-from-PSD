@@ -7,17 +7,17 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 .red--color, #main .nav .nav__header .nav__header--mark, #main .nav .nav__list .nav__item:hover, #about .about__content .about__button, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon { color: #ed145b; }
 
-.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
+.red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after, #download .download__container .download__content .download__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
 
 .separator, #about .about__separator { position: relative; overflow: hidden; padding-bottom: 50px; width: 100%; }
 
 .separator::before, #about .about__separator::before { content: ''; position: absolute; bottom: 100%; left: 0; width: 100%; height: 100%; background: #ed145b; transform-origin: 100% 100%; transform: rotate(-1deg); }
 
-.button, #main .main__slogan .slogan__button, #prices .prices__columns-container .columns .columns__header .columns__header-button, #prices .prices__columns-container .columns .columns__text .columns__text-button, #join-us .join-us__content .join-us__button, #more-info .more-info__slogan .more-info__button { padding: 16px 42px; text-transform: uppercase; border: none; border-radius: 25px; font-weight: bold; background: #f4f4f4; color: #5a5a5a; margin-top: 60px; }
+.button, #main .main__slogan .slogan__button, #prices .prices__columns-container .columns .columns__header .columns__header-button, #prices .prices__columns-container .columns .columns__text .columns__text-button, #join-us .join-us__content .join-us__button, #more-info .more-info__slogan .more-info__button, #download .download__container .download__content .download__button { padding: 16px 42px; text-transform: uppercase; border: none; border-radius: 25px; font-weight: bold; background: #f4f4f4; color: #5a5a5a; margin-top: 60px; }
 
-.button:hover, #main .main__slogan .slogan__button:hover, #prices .prices__columns-container .columns .columns__header .columns__header-button:hover, #prices .prices__columns-container .columns .columns__text .columns__text-button:hover, #join-us .join-us__content .join-us__button:hover, #more-info .more-info__slogan .more-info__button:hover { cursor: pointer; animation: none; }
+.button:hover, #main .main__slogan .slogan__button:hover, #prices .prices__columns-container .columns .columns__header .columns__header-button:hover, #prices .prices__columns-container .columns .columns__text .columns__text-button:hover, #join-us .join-us__content .join-us__button:hover, #more-info .more-info__slogan .more-info__button:hover, #download .download__container .download__content .download__button:hover { cursor: pointer; animation: none; }
 
-.button:focus, #main .main__slogan .slogan__button:focus, #prices .prices__columns-container .columns .columns__header .columns__header-button:focus, #prices .prices__columns-container .columns .columns__text .columns__text-button:focus, #join-us .join-us__content .join-us__button:focus, #more-info .more-info__slogan .more-info__button:focus { outline: 0; }
+.button:focus, #main .main__slogan .slogan__button:focus, #prices .prices__columns-container .columns .columns__header .columns__header-button:focus, #prices .prices__columns-container .columns .columns__text .columns__text-button:focus, #join-us .join-us__content .join-us__button:focus, #more-info .more-info__slogan .more-info__button:focus, #download .download__container .download__content .download__button:focus { outline: 0; }
 
 .text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content .info__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
 
@@ -201,4 +201,20 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #more-info .more-info__slogan .more-info__text { line-height: 30px; font-weight: 300; }
 
-#more-info .more-info__slogan .more-info__button { width: 180px; background: #ed145b; color: #fff; margin-top: 20px; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
+#more-info .more-info__slogan .more-info__button { width: 180px; background: #ed145b; color: #fff; margin: 30px 0; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
+
+#download { position: relative; }
+
+#download .download__browser { width: 800px; height: 600px; background: url("../images/browser.png") no-repeat center; position: absolute; top: 12%; left: 5%; box-shadow: 0 20px 35px 0 #5a5a5a; border-radius: 1%; }
+
+#download .download__container { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; min-height: 750px; }
+
+#download .download__container .download__content { max-width: 590px; color: #5a5a5a; }
+
+#download .download__container .download__content .download__header { margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
+
+#download .download__container .download__content .download__header::after { width: 40%; margin: 25px 0; }
+
+#download .download__container .download__content .download__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
+
+#download .download__container .download__content .download__button { width: 210px; background: #ed145b; color: #fff; margin: 30px 0; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
