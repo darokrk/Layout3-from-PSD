@@ -107,35 +107,36 @@ body {
     background: url('../images/main.jpg') no-repeat center;
     background-size: cover;
 
-    .nav {
-        display: flex;
+    .main__header {
+        @extend .display__flex--center;
         justify-content: space-between;
-        align-items: center;
 
-        .nav__header {
+        .header__text {
             color: #fff;
             font-family: 'Montserrat', sans-serif;
 
-            .nav__header--mark {
+            .header__text--mark {
                 @extend .red--color;
             }
         }
 
-        .nav__list {
-            list-style-type: none;
-            display: flex;
-            flex-wrap: wrap;
-            font-weight: 700;
-            letter-spacing: 1px;
+        .main__nav {
+            .nav__list {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                font-weight: 700;
+                letter-spacing: 1px;
 
-            .nav__item:not(:last-child) {
-                margin-right: 10px;
-            }
+                .nav__item:not(:last-child) {
+                    margin-right: 10px;
+                }
 
-            .nav__item:hover {
-                @extend .red--color;
-                cursor: pointer;
-                transition: 0.6s;
+                .nav__item:hover {
+                    @extend .red--color;
+                    cursor: pointer;
+                    transition: 0.6s;
+                }
             }
         }
     }
@@ -274,18 +275,13 @@ body {
     .services__icons {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
         flex-wrap: wrap;
         padding-bottom: 80px;
-        text-align: center;
 
         .icons__element {
-
-            // margin: 20px;
             .icons__content {
                 @extend .display__flex--center;
                 text-transform: uppercase;
-                font-weight: 400;
                 width: 130px;
                 height: 130px;
                 border: 1px solid #5a5a5a;
@@ -293,7 +289,7 @@ body {
             }
 
             .icons__text {
-                color: #ed145b;
+                @extend .red--color;
                 text-transform: uppercase;
             }
         }
@@ -324,7 +320,7 @@ body {
                 height: 150px;
                 display: inherit;
                 font-size: 158px;
-                color: #ed145b;
+                @extend .red--color;
                 font-family: 'Noto Serif', serif;
                 font-weight: bold;
             }
@@ -382,16 +378,14 @@ body {
         }
 
         .prices__text {
-            line-height: 1.8;
+            @extend .text--black;
             margin-bottom: 80px;
-            font-weight: 300;
         }
     }
 
     .prices__columns-container {
         display: flex;
         justify-content: space-around;
-        flex-direction: row;
         flex-wrap: wrap;
 
         .columns {
@@ -419,8 +413,6 @@ body {
                 background: #5a5a5a;
                 font-weight: 700;
                 @extend .display__flex--center;
-                flex-direction: row;
-                flex-wrap: wrap;
                 padding: 0 50px;
 
                 .columns__header--increase {
@@ -454,7 +446,6 @@ body {
 
                     &:hover {
                         background: #5a5a5a;
-                        color: #f4f4f4;
                         transition: 0.6s;
                     }
                 }
@@ -475,22 +466,17 @@ body {
         .info__element {
             display: flex;
             width: 360px;
-            height: 200px;
+            min-height: 200px;
 
             .info__content {
                 padding: 0 25px 25px;
+                @extend .text--black;
                 font-size: 15px;
 
                 .info__header {
                     text-transform: uppercase;
                     @extend .red--color;
-                    font-size: 15px;
                     margin-top: 0;
-                }
-
-                .info__text {
-                    @extend .text--black;
-                    font-weight: 300;
                 }
             }
         }
@@ -553,9 +539,8 @@ body {
         }
 
         .news__text {
-            line-height: 1.8;
+            @extend .text--black;
             margin-bottom: 80px;
-            font-weight: 300;
         }
     }
 
@@ -637,15 +622,11 @@ body {
 
     .news__content {
         padding: 20px;
+        @extend .text--black;
 
         .news__header {
             text-transform: uppercase;
             font-weight: 700;
-        }
-
-        .news__text {
-            font-weight: 300;
-            line-height: 30px;
         }
     }
 
@@ -694,8 +675,8 @@ body {
         }
 
         .more-info__text {
-            line-height: 30px;
-            font-weight: 300;
+            @extend .text--black;
+            color: #fff;
         }
 
         .more-info__button {
@@ -712,6 +693,7 @@ body {
 
 #download {
     position: relative;
+
     .download__browser {
         width: 800px;
         height: 600px;
@@ -723,6 +705,7 @@ body {
         border-radius: 1%;
         transform: scale(0.9);
     }
+
     .download__container {
         display: flex;
         justify-content: flex-end;
@@ -734,11 +717,7 @@ body {
             color: #5a5a5a;
 
             .download__header {
-                margin: 0;
-                font-size: 3rem;
-                font-weight: 300;
-                font-style: italic;
-                padding-top: 60px;
+                @extend .header__text--black;
 
                 &::after {
                     @extend .red--emphasize;
@@ -748,9 +727,7 @@ body {
             }
 
             .download__text {
-                color: #5a5a5a;
-                font-weight: 300;
-                line-height: 1.8;
+                @extend .text--black;
             }
 
             .download__button {
@@ -765,18 +742,305 @@ body {
         }
     }
 }
+
 #footer {
     background: #2b2b2b;
+
     .footer__content {
         min-height: 140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .footer__text {
             text-transform: uppercase;
         }
+
+        .footer__text--author {
+            font-weight: 700;
+        }
+
         .footer__text--mark {
-            color: #ed145b;
+            @extend .red--color;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .text--black {
+        font-size: 20px;
+    }
+
+    .padding-20 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #main {
+        .main__header {
+            .main__nav {
+                display: none;
+            }
+        }
+
+        .main__slogan {
+            @extend .padding-20;
+        }
+    }
+
+    #about {
+        .about__macbook {
+            display: none;
+        }
+
+        .about__content {
+            max-width: 100%;
+            @extend .padding-20;
+            text-align: center;
+
+            .about__header {
+                &::after {
+                    margin: 25px auto;
+                }
+            }
+
+            .about__text--mark {
+                margin: 30px;
+            }
+        }
+    }
+
+    #services {
+        .services__slogan {
+            @extend .padding-20;
+        }
+
+        .services__icons {
+            .icons__element {
+                text-align: center;
+                margin: 30px;
+
+                .icons__content {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    #quotes {
+        .quotes__icon {
+            display: none;
+        }
+    }
+
+    #prices {
+        .prices__slogan {
+            @extend .padding-20;
+        }
+    }
+
+    #news {
+        .news__slogan {
+            @extend .padding-20;
+        }
+    }
+
+    #more-info {
+        .more-info__slogan {
+            @extend .padding-20;
+        }
+    }
+
+    #download {
+        .download__browser {
+            display: none;
+        }
+
+        .download__container {
+            justify-content: center;
+            text-align: center;
+
+            .download__content {
+                @extend .padding-20;
+
+                .download__header {
+                    &::after {
+                        margin: 25px auto;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        .footer__content {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text--black {
+        font-size: 20px;
+    }
+
+    #main {
+        .main__header {
+            justify-content: space-around;
+            font-size: 20px;
+        }
+    }
+
+    #about {
+        .about__macbook {
+            display: none;
+        }
+
+        .about__content {
+            max-width: 590px;
+            margin: 0 auto;
+        }
+    }
+
+    #quotes {
+        .quotes__icon--left {
+            top: 44%;
+            left: 4%;
+        }
+
+        .quotes__icon--right {
+            top: 46%;
+            right: 4%;
+        }
+    }
+
+    #info {
+        .info__element {
+            padding: 20px;
+        }
+    }
+
+    #news {
+        .news__footer {
+            font-size: 20px;
+        }
+    }
+
+    #download {
+        .download__browser {
+            display: none;
+        }
+
+        .download__container {
+            justify-content: center;
+        }
+    }
+
+    #footer {
+        .footer__content {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1224px) {
+    #main {
+        .main__header {
+            justify-content: space-around;
+        }
+    }
+
+    #about {
+        .about__content {
+            padding: 20px;
+        }
+
+        .about__macbook {
+            width: 100%;
+            transform: scale(0.5);
+            top: 13%;
+            right: -23%;
+        }
+    }
+
+    #quotes {
+        .quotes__icon--left {
+            top: 44%;
+            left: 4%;
+        }
+
+        .quotes__icon--right {
+            top: 46%;
+            right: 4%;
+        }
+    }
+
+    #prices {
+        .columns {
+            min-width: 377px;
+        }
+    }
+
+    #download {
+        .download__browser {
+            transform: scale(0.4);
+            top: 5%;
+            left: -18%;
+        }
+    }
+
+    #footer {
+        .footer__content {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (min-width: 1225px) and (max-width: 1366px) {
+    #main {
+        .main__header {
+            justify-content: space-around;
+        }
+    }
+
+    #about {
+        .about__content {
+            padding: 20px;
+        }
+
+        .about__macbook {
+            width: 100%;
+            transform: scale(0.7);
+            top: 10%;
+            right: -21%;
+        }
+    }
+
+    #quotes {
+        .quotes__icon--left {
+            top: 46%;
+            left: 5%;
+        }
+
+        .quotes__icon--right {
+            top: 48%;
+            right: 5%;
+        }
+    }
+
+    #download {
+        .download__browser {
+            transform: scale(0.7);
+            top: 10%;
+            left: -5%;
+        }
+    }
+
+    #footer {
+        .footer__content {
+            justify-content: space-around;
         }
     }
 }

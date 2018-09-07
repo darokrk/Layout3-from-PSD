@@ -5,7 +5,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 @keyframes pulse { to { box-shadow: 0 0 0 20px rgba(232, 76, 61, 0); } }
 
-.red--color, #main .nav .nav__header .nav__header--mark, #main .nav .nav__list .nav__item:hover, #about .about__content .about__button, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon { color: #ed145b; }
+.red--color, #main .main__header .header__text .header__text--mark, #main .main__header .main__nav .nav__list .nav__item:hover, #about .about__content .about__button, #services .services__icons .icons__element .icons__text, #quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon, #footer .footer__content .footer__text--mark { color: #ed145b; }
 
 .red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after, #download .download__container .download__content .download__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
 
@@ -19,27 +19,27 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 .button:focus, #main .main__slogan .slogan__button:focus, #prices .prices__columns-container .columns .columns__header .columns__header-button:focus, #prices .prices__columns-container .columns .columns__text .columns__text-button:focus, #join-us .join-us__content .join-us__button:focus, #more-info .more-info__slogan .more-info__button:focus, #download .download__container .download__content .download__button:focus { outline: 0; }
 
-.text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content .info__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
+.text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__slogan .prices__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content, #news .news__slogan .news__text, #news .news__content, #more-info .more-info__slogan .more-info__text, #download .download__container .download__content .download__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
 
 .slogan__text--white, #main .main__slogan .slogan__content, #quotes .quotes__content .quotes__text { font-size: 1.35rem; font-weight: 300; color: #fff; }
 
-.header__text--black, #about .about__content .about__header, #services .services__slogan .services__header, #prices .prices__slogan .prices__header, #news .news__slogan .news__header, #more-info .more-info__slogan .more-info__header { color: #5a5a5a; margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
+.header__text--black, #about .about__content .about__header, #services .services__slogan .services__header, #prices .prices__slogan .prices__header, #news .news__slogan .news__header, #more-info .more-info__slogan .more-info__header, #download .download__container .download__content .download__header { color: #5a5a5a; margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
 
-.display__flex--center, #main .main__slogan, #services .services__icons .icons__element .icons__content, #quotes .quotes__content, #prices .prices__columns-container .columns .columns__header, #join-us .join-us__content, #news .news__container .news__image--first .image__layer, #news .news__container .news__image--second .image__layer, #news .news__container .news__image--third .image__layer, #news .news__container .news__image--fourth .image__layer, #news .news__container .news__image--fifth .image__layer, #news .news__container .news__image--six .image__layer, #more-info .more-info__slogan { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.display__flex--center, #main .main__header, #main .main__slogan, #services .services__icons .icons__element .icons__content, #quotes .quotes__content, #prices .prices__columns-container .columns .columns__header, #join-us .join-us__content, #news .news__container .news__image--first .image__layer, #news .news__container .news__image--second .image__layer, #news .news__container .news__image--third .image__layer, #news .news__container .news__image--fourth .image__layer, #news .news__container .news__image--fifth .image__layer, #news .news__container .news__image--six .image__layer, #more-info .more-info__slogan { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .container { max-width: 1170px; margin: 0 auto; padding: 0 15px; }
 
 #main { width: 100%; height: 800px; background: url("../images/main.jpg") no-repeat center; background-size: cover; }
 
-#main .nav { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+#main .main__header { -ms-flex-pack: justify; justify-content: space-between; }
 
-#main .nav .nav__header { color: #fff; font-family: 'Montserrat', sans-serif; }
+#main .main__header .header__text { color: #fff; font-family: 'Montserrat', sans-serif; }
 
-#main .nav .nav__list { list-style-type: none; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; font-weight: 700; letter-spacing: 1px; }
+#main .main__header .main__nav .nav__list { list-style-type: none; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; font-weight: 700; letter-spacing: 1px; }
 
-#main .nav .nav__list .nav__item:not(:last-child) { margin-right: 10px; }
+#main .main__header .main__nav .nav__list .nav__item:not(:last-child) { margin-right: 10px; }
 
-#main .nav .nav__list .nav__item:hover { cursor: pointer; transition: 0.6s; }
+#main .main__header .main__nav .nav__list .nav__item:hover { cursor: pointer; transition: 0.6s; }
 
 #main .main__slogan { margin: 60px auto; min-height: 550px; -ms-flex-direction: column; flex-direction: column; text-align: center; }
 
@@ -75,11 +75,11 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #services .services__slogan .services__text { margin-bottom: 80px; }
 
-#services .services__icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 80px; text-align: center; }
+#services .services__icons { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 80px; }
 
-#services .services__icons .icons__element .icons__content { text-transform: uppercase; font-weight: 400; width: 130px; height: 130px; border: 1px solid #5a5a5a; border-radius: 50%; }
+#services .services__icons .icons__element .icons__content { text-transform: uppercase; width: 130px; height: 130px; border: 1px solid #5a5a5a; border-radius: 50%; }
 
-#services .services__icons .icons__element .icons__text { color: #ed145b; text-transform: uppercase; }
+#services .services__icons .icons__element .icons__text { text-transform: uppercase; }
 
 #quotes { background: url("../images/quotes.jpg") no-repeat center; background-size: cover; position: relative; }
 
@@ -87,7 +87,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #quotes .quotes__content .quotes__text { font-style: italic; line-height: 40px; position: relative; }
 
-#quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after { content: ',,'; height: 150px; display: inherit; font-size: 158px; color: #ed145b; font-family: 'Noto Serif', serif; font-weight: bold; }
+#quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after { content: ',,'; height: 150px; display: inherit; font-size: 158px; font-family: 'Noto Serif', serif; font-weight: bold; }
 
 #quotes .quotes__content .quotes__text::before { transform: rotate(180deg); }
 
@@ -105,9 +105,9 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #prices .prices__slogan .prices__header::after { width: 70%; }
 
-#prices .prices__slogan .prices__text { line-height: 1.8; margin-bottom: 80px; font-weight: 300; }
+#prices .prices__slogan .prices__text { margin-bottom: 80px; }
 
-#prices .prices__columns-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+#prices .prices__columns-container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 #prices .prices__columns-container .columns { min-height: 467px; width: 262px; background: #fff; position: relative; text-align: center; margin-bottom: 50px; box-shadow: 0 20px 35px 0 #5a5a5a; }
 
@@ -115,7 +115,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #prices .prices__columns-container .columns:hover .columns__header { background: #ed145b; transition: 0.6s; }
 
-#prices .prices__columns-container .columns .columns__header { min-height: 150px; background: #5a5a5a; font-weight: 700; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 50px; }
+#prices .prices__columns-container .columns .columns__header { min-height: 150px; background: #5a5a5a; font-weight: 700; padding: 0 50px; }
 
 #prices .prices__columns-container .columns .columns__header .columns__header--increase { font-size: 3.1rem; }
 
@@ -127,17 +127,15 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #prices .prices__columns-container .columns .columns__text .columns__text-button { width: 75%; top: 15%; background: #ed145b; color: #fff; margin-top: 20px; }
 
-#prices .prices__columns-container .columns .columns__text .columns__text-button:hover { background: #5a5a5a; color: #f4f4f4; transition: 0.6s; }
+#prices .prices__columns-container .columns .columns__text .columns__text-button:hover { background: #5a5a5a; transition: 0.6s; }
 
 #info .info__container { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-line-pack: center; align-content: center; min-height: 600px; margin-top: 60px; }
 
-#info .info__container .info__element { display: -ms-flexbox; display: flex; width: 360px; height: 200px; }
+#info .info__container .info__element { display: -ms-flexbox; display: flex; width: 360px; min-height: 200px; }
 
 #info .info__container .info__element .info__content { padding: 0 25px 25px; font-size: 15px; }
 
-#info .info__container .info__element .info__content .info__header { text-transform: uppercase; font-size: 15px; margin-top: 0; }
-
-#info .info__container .info__element .info__content .info__text { font-weight: 300; }
+#info .info__container .info__element .info__content .info__header { text-transform: uppercase; margin-top: 0; }
 
 #join-us { background: #ed145b; }
 
@@ -155,7 +153,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #news .news__slogan .news__header::after { width: 70%; }
 
-#news .news__slogan .news__text { line-height: 1.8; margin-bottom: 80px; font-weight: 300; }
+#news .news__slogan .news__text { margin-bottom: 80px; }
 
 #news .news__container { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -185,8 +183,6 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #news .news__content .news__header { text-transform: uppercase; font-weight: 700; }
 
-#news .news__content .news__text { font-weight: 300; line-height: 30px; }
-
 #news .news__footer { min-height: 150px; width: 80%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; margin: 10px auto 40px; text-align: center; text-transform: uppercase; font-weight: 600; }
 
 #news .news__footer .footer__icon { transform: rotate(90deg); padding: 5px; font-size: 24px; }
@@ -199,7 +195,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #more-info .more-info__slogan .more-info__header::after { width: 45%; }
 
-#more-info .more-info__slogan .more-info__text { line-height: 30px; font-weight: 300; }
+#more-info .more-info__slogan .more-info__text { color: #fff; }
 
 #more-info .more-info__slogan .more-info__button { width: 180px; background: #ed145b; color: #fff; margin: 30px 0; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
 
@@ -211,11 +207,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #download .download__container .download__content { max-width: 590px; color: #5a5a5a; }
 
-#download .download__container .download__content .download__header { margin: 0; font-size: 3rem; font-weight: 300; font-style: italic; padding-top: 60px; }
-
 #download .download__container .download__content .download__header::after { width: 40%; margin: 25px 0; }
-
-#download .download__container .download__content .download__text { color: #5a5a5a; font-weight: 300; line-height: 1.8; }
 
 #download .download__container .download__content .download__button { width: 210px; background: #ed145b; color: #fff; margin: 30px 0; box-shadow: 0 0 0 0 #ed145b; animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1); }
 
@@ -225,4 +217,48 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #footer .footer__content .footer__text { text-transform: uppercase; }
 
-#footer .footer__content .footer__text--mark { color: #ed145b; }
+#footer .footer__content .footer__text--author { font-weight: 700; }
+
+@media (max-width: 767px) { .text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__slogan .prices__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content, #news .news__slogan .news__text, #news .news__content, #more-info .more-info__slogan .more-info__text, #download .download__container .download__content .download__text { font-size: 20px; }
+  .padding-20, #main .main__slogan, #about .about__content, #services .services__slogan, #prices .prices__slogan, #news .news__slogan, #more-info .more-info__slogan, #download .download__container .download__content { width: 100%; padding: 20px; }
+  #main .main__header .main__nav { display: none; }
+  #about .about__macbook { display: none; }
+  #about .about__content { max-width: 100%; text-align: center; }
+  #about .about__content .about__header::after { margin: 25px auto; }
+  #about .about__content .about__text--mark { margin: 30px; }
+  #services .services__icons .icons__element { text-align: center; margin: 30px; }
+  #services .services__icons .icons__element .icons__content { width: 200px; height: 200px; }
+  #quotes .quotes__icon { display: none; }
+  #download .download__browser { display: none; }
+  #download .download__container { -ms-flex-pack: center; justify-content: center; text-align: center; }
+  #download .download__container .download__content .download__header::after { margin: 25px auto; }
+  #footer .footer__content { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; } }
+
+@media (min-width: 768px) and (max-width: 1024px) { .text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__slogan .prices__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content, #news .news__slogan .news__text, #news .news__content, #more-info .more-info__slogan .more-info__text, #download .download__container .download__content .download__text { font-size: 20px; }
+  #main .main__header { -ms-flex-pack: distribute; justify-content: space-around; font-size: 20px; }
+  #about .about__macbook { display: none; }
+  #about .about__content { max-width: 590px; margin: 0 auto; }
+  #quotes .quotes__icon--left { top: 44%; left: 4%; }
+  #quotes .quotes__icon--right { top: 46%; right: 4%; }
+  #info .info__element { padding: 20px; }
+  #news .news__footer { font-size: 20px; }
+  #download .download__browser { display: none; }
+  #download .download__container { -ms-flex-pack: center; justify-content: center; }
+  #footer .footer__content { -ms-flex-pack: distribute; justify-content: space-around; } }
+
+@media (min-width: 1024px) and (max-width: 1224px) { #main .main__header { -ms-flex-pack: distribute; justify-content: space-around; }
+  #about .about__content { padding: 20px; }
+  #about .about__macbook { width: 100%; transform: scale(0.5); top: 13%; right: -23%; }
+  #quotes .quotes__icon--left { top: 44%; left: 4%; }
+  #quotes .quotes__icon--right { top: 46%; right: 4%; }
+  #prices .columns { min-width: 377px; }
+  #download .download__browser { transform: scale(0.4); top: 5%; left: -18%; }
+  #footer .footer__content { -ms-flex-pack: distribute; justify-content: space-around; } }
+
+@media (min-width: 1225px) and (max-width: 1366px) { #main .main__header { -ms-flex-pack: distribute; justify-content: space-around; }
+  #about .about__content { padding: 20px; }
+  #about .about__macbook { width: 100%; transform: scale(0.7); top: 10%; right: -21%; }
+  #quotes .quotes__icon--left { top: 46%; left: 5%; }
+  #quotes .quotes__icon--right { top: 48%; right: 5%; }
+  #download .download__browser { transform: scale(0.7); top: 10%; left: -5%; }
+  #footer .footer__content { -ms-flex-pack: distribute; justify-content: space-around; } }
