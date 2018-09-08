@@ -5,6 +5,9 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 @keyframes pulse { to { box-shadow: 0 0 0 20px rgba(232, 76, 61, 0); } }
 
+@keyframes fade { from { opacity: .4; }
+  to { opacity: 1; } }
+
 .red--color, #main .main__header .header__text .header__text--mark, #main .main__header .main__nav .nav__list .nav__item:hover, #about .about__content .about__button, #services .services__icons .icons__element .icons__text, #quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon, #footer .footer__content .footer__text--mark { color: #ed145b; }
 
 .red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after, #download .download__container .download__content .download__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
@@ -67,7 +70,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #about .about__content .about__button:hover, #about .about__content .about__button :focus { cursor: pointer; outline: none; }
 
-#about .about__content .about__button .about__button--icon { margin-left: 3px; }
+#about .about__content .about__button .about__button--icon { padding: 4px; }
 
 #services .services__slogan { min-height: 400px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: center; align-items: center; text-align: center; }
 
@@ -83,7 +86,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #quotes { background: url("../images/quotes.jpg") no-repeat center; background-size: cover; position: relative; }
 
-#quotes .quotes__content { min-height: 500px; width: 80%; margin: auto; text-align: center; }
+#quotes .quotes__content { min-height: 500px; width: 80%; margin: auto; text-align: center; animation-name: fade; animation-duration: 2.5s; }
 
 #quotes .quotes__content .quotes__text { font-style: italic; line-height: 40px; position: relative; }
 
