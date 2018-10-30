@@ -29,3 +29,11 @@ leftIcon.addEventListener('click', function () {
 rightIcon.addEventListener('click', function () {
     plusSlides(-1)
 });
+
+
+var navBtn = document.querySelector(".main__mobile");
+var navMenu = document.querySelector(".main__nav");
+navBtn.addEventListener('click', function () {
+    navBtn.classList.toggle('change');
+    navMenu.classList.toggle('change__menu');
+});

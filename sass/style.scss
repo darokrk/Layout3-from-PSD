@@ -142,7 +142,12 @@ body {
                     margin-right: 10px;
                 }
 
-                .nav__item:hover {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                a:hover {
                     @extend .red--color;
                     cursor: pointer;
                     transition: 0.6s;
@@ -790,8 +795,67 @@ body {
 
     #main {
         .main__header {
+            .main__mobile {
+                z-index: 1;
+
+                .mobile__icon-1,
+                .mobile__icon-2,
+                .mobile__icon-3 {
+                    width: 35px;
+                    height: 4px;
+                    background-color: #fff;
+                    margin: 6px 0;
+                    transition: 0.4s;
+                }
+            }
+
             .main__nav {
-                display: none;
+                position: absolute;
+                top: 2%;
+                right: 5%;
+
+                .nav__list {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+
+                    .nav__item {
+                        display: none;
+                    }
+                }
+            }
+
+            .change .mobile__icon-1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+
+            .change .mobile__icon-2 {
+                opacity: 0;
+            }
+
+            .change .mobile__icon-3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+
+            .change__menu {
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.9);
+                top: 0;
+                right: 0;
+
+                .nav__list {
+                    position: absolute;
+                    top: 20%;
+                    left: 20%;
+
+                    .nav__item {
+                        display: block;
+                        font-size: 40px;
+                    }
+                }
             }
         }
 

@@ -8,7 +8,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 @keyframes fade { from { opacity: .4; }
   to { opacity: 1; } }
 
-.red--color, #main .main__header .header__text .header__text--mark, #main .main__header .main__nav .nav__list .nav__item:hover, #about .about__content .about__button, #services .services__icons .icons__element .icons__text, #quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon, #footer .footer__content .footer__text--mark { color: #ed145b; }
+.red--color, #main .main__header .header__text .header__text--mark, #main .main__header .main__nav .nav__list a:hover, #about .about__content .about__button, #services .services__icons .icons__element .icons__text, #quotes .quotes__content .quotes__text::before, #quotes .quotes__content .quotes__text::after, #info .info__container .info__element .info__content .info__header, #news .news__footer, #news .news__footer .footer__icon, #footer .footer__content .footer__text--mark { color: #ed145b; }
 
 .red--emphasize, #main .main__slogan .slogan__header::after, #about .about__content .about__header::after, #services .services__slogan .services__header::after, #prices .prices__slogan .prices__header::after, #news .news__slogan .news__header::after, #more-info .more-info__slogan .more-info__header::after, #download .download__container .download__content .download__header::after { content: ''; border: 1px solid #ed145b; width: 30%; display: block; margin: 25px auto; }
 
@@ -42,7 +42,9 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #main .main__header .main__nav .nav__list .nav__item:not(:last-child) { margin-right: 10px; }
 
-#main .main__header .main__nav .nav__list .nav__item:hover { cursor: pointer; transition: 0.6s; }
+#main .main__header .main__nav .nav__list a { text-decoration: none; color: inherit; }
+
+#main .main__header .main__nav .nav__list a:hover { cursor: pointer; transition: 0.6s; }
 
 #main .main__slogan { margin: 60px auto; min-height: 550px; -ms-flex-direction: column; flex-direction: column; text-align: center; }
 
@@ -224,7 +226,17 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 @media (max-width: 767px) { .text--black, #about .about__content .about__text, #services .services__slogan .services__text, #prices .prices__slogan .prices__text, #prices .prices__columns-container .columns .columns__text, #info .info__container .info__element .info__content, #news .news__slogan .news__text, #news .news__content, #more-info .more-info__slogan .more-info__text, #download .download__container .download__content .download__text { font-size: 20px; }
   .padding-20, #main .main__slogan, #about .about__content, #services .services__slogan, #prices .prices__slogan, #news .news__slogan, #more-info .more-info__slogan, #download .download__container .download__content { width: 100%; padding: 20px; }
-  #main .main__header .main__nav { display: none; }
+  #main .main__header .main__mobile { z-index: 1; }
+  #main .main__header .main__mobile .mobile__icon-1, #main .main__header .main__mobile .mobile__icon-2, #main .main__header .main__mobile .mobile__icon-3 { width: 35px; height: 4px; background-color: #fff; margin: 6px 0; transition: 0.4s; }
+  #main .main__header .main__nav { position: absolute; top: 2%; right: 5%; }
+  #main .main__header .main__nav .nav__list { display: block; margin: 0; padding: 0; }
+  #main .main__header .main__nav .nav__list .nav__item { display: none; }
+  #main .main__header .change .mobile__icon-1 { transform: rotate(-45deg) translate(-9px, 6px); }
+  #main .main__header .change .mobile__icon-2 { opacity: 0; }
+  #main .main__header .change .mobile__icon-3 { transform: rotate(45deg) translate(-8px, -8px); }
+  #main .main__header .change__menu { width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.9); top: 0; right: 0; }
+  #main .main__header .change__menu .nav__list { position: absolute; top: 20%; left: 20%; }
+  #main .main__header .change__menu .nav__list .nav__item { display: block; font-size: 40px; }
   #about .about__macbook { display: none; }
   #about .about__content { max-width: 100%; text-align: center; }
   #about .about__content .about__header::after { margin: 25px auto; }
