@@ -414,7 +414,7 @@ body {
             margin-bottom: 50px;
             box-shadow: 0 20px 35px 0 #5a5a5a;
 
-            &:hover {
+            &:hover, &:active {
                 cursor: pointer;
                 transform: scale(1.05);
                 transition: 0.1s;
@@ -603,7 +603,7 @@ body {
                 }
             }
 
-            &:hover {
+            &:hover, &:active {
                 .image__layer {
                     top: 0;
                     transform: none;
