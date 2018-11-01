@@ -116,9 +116,9 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #prices .prices__columns-container .columns { min-height: 467px; width: 262px; background: #fff; position: relative; text-align: center; margin-bottom: 50px; box-shadow: 0 20px 35px 0 #5a5a5a; }
 
-#prices .prices__columns-container .columns:hover { cursor: pointer; transform: scale(1.05); transition: 0.1s; }
+#prices .prices__columns-container .columns:hover, #prices .prices__columns-container .columns:active { cursor: pointer; transform: scale(1.05); transition: 0.1s; }
 
-#prices .prices__columns-container .columns:hover .columns__header { background: #ed145b; transition: 0.6s; }
+#prices .prices__columns-container .columns:hover .columns__header, #prices .prices__columns-container .columns:active .columns__header { background: #ed145b; transition: 0.6s; }
 
 #prices .prices__columns-container .columns .columns__header { min-height: 150px; background: #5a5a5a; font-weight: 700; padding: 0 50px; }
 
@@ -170,7 +170,7 @@ body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; color: #fff; }
 
 #news .news__container .news__image--first .image__layer .image__icon, #news .news__container .news__image--second .image__layer .image__icon, #news .news__container .news__image--third .image__layer .image__icon, #news .news__container .news__image--fourth .image__layer .image__icon, #news .news__container .news__image--fifth .image__layer .image__icon, #news .news__container .news__image--six .image__layer .image__icon { color: #fff; }
 
-#news .news__container .news__image--first:hover .image__layer, #news .news__container .news__image--second:hover .image__layer, #news .news__container .news__image--third:hover .image__layer, #news .news__container .news__image--fourth:hover .image__layer, #news .news__container .news__image--fifth:hover .image__layer, #news .news__container .news__image--six:hover .image__layer { top: 0; transform: none; transition: 1.5s; }
+#news .news__container .news__image--first:hover .image__layer, #news .news__container .news__image--first:active .image__layer, #news .news__container .news__image--second:hover .image__layer, #news .news__container .news__image--second:active .image__layer, #news .news__container .news__image--third:hover .image__layer, #news .news__container .news__image--third:active .image__layer, #news .news__container .news__image--fourth:hover .image__layer, #news .news__container .news__image--fourth:active .image__layer, #news .news__container .news__image--fifth:hover .image__layer, #news .news__container .news__image--fifth:active .image__layer, #news .news__container .news__image--six:hover .image__layer, #news .news__container .news__image--six:active .image__layer { top: 0; transform: none; transition: 1.5s; }
 
 #news .news__image--first { background: url("../images/photo-1.jpg") no-repeat center; }
 
