@@ -46,6 +46,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+<<<<<<< HEAD
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -56,4 +57,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+=======
+>>>>>>> 410de8c81312378128c47c9edec1386b03d4556f
 });
