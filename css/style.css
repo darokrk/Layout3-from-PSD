@@ -43,7 +43,7 @@ html { font-family: "Lato", sans-serif; color: #fff; }
 
 .mt--0 { margin-top: 0; }
 
-.main { height: 800px; background: url("../images/main.jpg") no-repeat center; background-size: cover; position: relative; }
+.main { height: 800px; background: url("../images/main.jpg") no-repeat center; background-size: cover; background-attachment: fixed; position: relative; }
 
 .main .main__header { max-width: 1170px; -ms-flex-pack: justify; justify-content: space-between; margin: 0 auto; padding: 0 15px; }
 

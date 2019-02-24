@@ -150,6 +150,7 @@ html {
   height: 800px;
   background: url("../images/main.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 
   .main__header {
@@ -835,6 +836,7 @@ html {
     .download__wrapper {
       justify-content: center;
     }
+
     .download-image__wrapper {
       position: inherit;
       margin: 20px;
