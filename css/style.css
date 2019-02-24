@@ -226,7 +226,7 @@ html { font-family: "Lato", sans-serif; color: #fff; }
   .main .slogan__text { font-size: 1.15rem; }
   .about .about__wrapper .about__content { text-align: center; }
   .about .about__wrapper .about__content .about__title--after:after { margin-left: auto; }
-  .about .about__wrapper .laptop__wrapper { max-width: none; margin: 20px; }
+  .about .about__wrapper .laptop__wrapper { max-width: 100%; margin: 20px; }
   .about .about__wrapper .laptop__image { width: 100%; }
   .services .wrapper__element { text-align: center; margin: 20px; }
   .info .info-element__content { font-size: 1rem; }
