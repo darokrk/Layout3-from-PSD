@@ -1,48 +1,49 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", () => {
+  let slideIndex = 1;
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+  const showSlides = n => {
+    let i;
+    const slides = document.querySelectorAll(".quotes__wrapper");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "flex";
+  };
 
-function showSlides(n) {
-  var i;
-  var slides = document.querySelectorAll(".quotes__wrapper");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "flex";
-}
+  showSlides(slideIndex);
 
-var leftIcon = document.querySelector(".quotes__icon--left");
-var rightIcon = document.querySelector(".quotes__icon--right");
+  const plusSlides = n => {
+    showSlides((slideIndex += n));
+  };
 
-leftIcon.addEventListener("click", function() {
-  plusSlides(1);
-});
-rightIcon.addEventListener("click", function() {
-  plusSlides(-1);
-});
+  const leftIcon = document.querySelector(".quotes__icon--left");
+  const rightIcon = document.querySelector(".quotes__icon--right");
 
-var navBtn = document.querySelector(".main__mobile");
-var navMenu = document.querySelector(".main__nav");
-navBtn.addEventListener("click", function() {
-  navBtn.classList.toggle("change");
-  navMenu.classList.toggle("change__menu");
-});
+  leftIcon.addEventListener("click", () => plusSlides(1));
+  rightIcon.addEventListener("click", () => plusSlides(-1));
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
+  const navBtn = document.querySelector(".main__mobile");
+  const navMenu = document.querySelector(".main__nav");
+  navBtn.addEventListener("click", () => {
+    navBtn.classList.toggle("change");
+    navMenu.classList.toggle("change__menu");
+  });
 
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      navBtn.classList.toggle("change");
+      navMenu.classList.toggle("change__menu");
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
     });
   });
 });
