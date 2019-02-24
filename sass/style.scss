@@ -643,6 +643,7 @@ html {
   }
 
   .section-slogan__wrapper {
+    max-width: 600px;
     margin: 20px auto;
   }
 
@@ -748,6 +749,7 @@ html {
   .about {
     .about__wrapper {
       .about__content {
+        max-width: 600px;
         text-align: center;
 
         .text__title {
@@ -830,6 +832,9 @@ html {
   }
 
   .download {
+    .download__wrapper {
+      justify-content: center;
+    }
     .download-image__wrapper {
       position: inherit;
       margin: 20px;
