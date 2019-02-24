@@ -232,6 +232,8 @@ html {
     display: flex;
 
     .about__content {
+      max-width: 700px;
+
       .about__title--after:after {
         width: 45%;
         margin-left: 0;
@@ -741,6 +743,11 @@ html {
     .about__wrapper {
       .about__content {
         text-align: center;
+
+        .text__title {
+          width: 80%;
+          margin: auto;
+        }
 
         .about__title--after:after {
           margin-left: auto;

@@ -71,6 +71,8 @@ html { font-family: "Lato", sans-serif; color: #fff; }
 
 .about .about__wrapper { display: -ms-flexbox; display: flex; }
 
+.about .about__wrapper .about__content { max-width: 700px; }
+
 .about .about__wrapper .about__content .about__title--after:after { width: 45%; margin-left: 0; }
 
 .about .about__wrapper .about__content .about__icon { width: 30px; height: 30px; margin-left: 10px; padding: 5px 5px 5px 9px; text-align: center; border: 1px solid; background: inherit; border-radius: 50%; vertical-align: middle; }
@@ -225,6 +227,7 @@ html { font-family: "Lato", sans-serif; color: #fff; }
   .main .slogan__header { font-size: 2.2rem; }
   .main .slogan__text { font-size: 1.15rem; }
   .about .about__wrapper .about__content { text-align: center; }
+  .about .about__wrapper .about__content .text__title { width: 80%; margin: auto; }
   .about .about__wrapper .about__content .about__title--after:after { margin-left: auto; }
   .about .about__wrapper .laptop__wrapper { max-width: 100%; margin: 20px; }
   .about .about__wrapper .laptop__image { width: 100%; }
