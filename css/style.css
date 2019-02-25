@@ -133,7 +133,7 @@ html { font-family: "Lato", sans-serif; color: #fff; }
 
 .info .info-wrapper__element { display: -ms-flexbox; display: flex; max-width: 355px; margin: 30px 10px 30px; }
 
-.info .info-element__content { padding: 0 20px; font-size: 15px; }
+.info .info-element__content { padding-left: 20px; font-size: 15px; }
 
 .join-us { background: #ed145b; }
 
@@ -234,6 +234,7 @@ html { font-family: "Lato", sans-serif; color: #fff; }
   .about .about__wrapper .laptop__image { width: 100%; }
   .services .wrapper__element { text-align: center; margin: 20px; }
   .info .info-element__content { font-size: 1rem; }
+  .info .info-wrapper__element { max-width: 275px; }
   .column-header__button, .column-content__button { width: 60%; }
   .quotes .quotes__wrapper { width: 85%; }
   .quotes .quotes__wrapper .quotes--text { font-size: 1.2rem; line-height: 1.4; }
@@ -258,7 +259,6 @@ html { font-family: "Lato", sans-serif; color: #fff; }
   .about .about__wrapper .laptop__image { width: 80%; }
   .quotes .quotes__icon--right { right: 3%; }
   .quotes .quotes__icon--left { left: 3%; }
-  .info .info-wrapper__element { max-width: 340px; }
   .news .container { padding: 5vh 0px; }
   .download .download__wrapper { -ms-flex-pack: center; justify-content: center; }
   .download .download-image__wrapper { position: inherit; margin: 20px; text-align: center; }

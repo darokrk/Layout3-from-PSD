@@ -434,7 +434,7 @@ html {
   }
 
   .info-element__content {
-    padding: 0 20px;
+    padding-left: 20px;
     font-size: 15px;
   }
 }
@@ -782,8 +782,14 @@ html {
     }
   }
 
-  .info .info-element__content {
-    font-size: 1rem;
+  .info {
+    .info-element__content {
+      font-size: 1rem;
+    }
+
+    .info-wrapper__element {
+      max-width: 275px;
+    }
   }
 
   .column-header__button,
@@ -906,12 +912,6 @@ html {
 
     .quotes__icon--left {
       left: 3%;
-    }
-  }
-
-  .info {
-    .info-wrapper__element {
-      max-width: 340px;
     }
   }
 
